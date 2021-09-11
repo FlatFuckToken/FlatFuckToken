@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.8.0 < 0.9.0;
+
+import 'https://github.com/FlatFuckToken/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol';
+
+
+contract FlatFuckToken is ERC20{
+    constructor() ERC20("FlatFuckToken", "_FT") {
+        _mint(msg.sender, (69*420) * 10 ** 3);
+    }
+}
